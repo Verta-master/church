@@ -1,13 +1,28 @@
+.photo--internal {
+  border: 1px solid #bfbfbf;
+  background-color: #fff;
+  
+  .photo__list {
+    border: none;
+  }
+  
+  .pages {
+    margin-top: 15px;
+  }
+}
+
 .photo__list {
   .reset();
   list-style-type: none;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: flex-start;
   align-items: stretch;
+  align-content: flex-start;
   padding-left: 52px;
   padding-right: 30px;
   padding-top: 30px;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
   border: 1px solid #bfbfbf;
   background-color: #fff;
   
@@ -18,6 +33,12 @@
 
 .photo__item {
   width: 243px;
+  margin-right: 40px;
+  margin-bottom: 20px;
+  
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
 }
 
 .photo__img {
