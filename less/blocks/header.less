@@ -1,0 +1,35 @@
+.header {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #000;
+  color: #fff;
+}
+
+.header__list {
+  .reset();
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.header__item {
+  margin-left: 10px;
+  margin-right: 10px;
+  
+  a {
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  
+  &--active,
+  &:hover,
+  &:active {
+    a {
+      color: #c6aa65;
+      text-decoration: underline;
+    }
+  }
+}

@@ -4,37 +4,39 @@
   <meta charset="UTF-8">
   <meta name="robots" content="noindex">
   <meta  name="viewport" content="width=device-width,initial-scale=1">
-  <title>Title</title>
+  <title>Храм святителя Тихона Патриарха Всероссийского</title>
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
   <header class="header">
-    <ul class="wrapper header__menu">
-      <li class="header__item">
-        <a href="#">о храме</a>
-      </li>
-      <li class="header__item">
-        <a href="#">духовенство</a>
-      </li>
-      <li class="header__item">
-        <a href="#">расписание богослужений</a>
-      </li>
-      <li class="header__item">
-        <a href="#">таинство крещения</a>
-      </li>
-      <li class="header__item">
-        <a href="#">фотогалерея</a>
-      </li>
-      <li class="header__item">
-        <a href="#">пожертвования</a>
-      </li>
-      <li class="header__item">
-        <a href="#">вопросы священнику</a>
-      </li>
-      <li class="header__item">
-        <a href="#">контакты</a>
-      </li>
-    </ul>
+    <nav class="header__menu wrapper">
+      <ul class="header__list">
+        <li class="header__item">
+          <a href="#">о храме</a>
+        </li>
+        <li class="header__item">
+          <a href="#">духовенство</a>
+        </li>
+        <li class="header__item header__item--active">
+          <a href="#">расписание богослужений</a>
+        </li>
+        <li class="header__item">
+          <a href="#">таинство крещения</a>
+        </li>
+        <li class="header__item">
+          <a href="#">фотогалерея</a>
+        </li>
+        <li class="header__item">
+          <a href="#">пожертвования</a>
+        </li>
+        <li class="header__item">
+          <a href="#">вопросы священнику</a>
+        </li>
+        <li class="header__item">
+          <a href="#">контакты</a>
+        </li>
+      </ul>
+    </nav>
   </header>
   
   <main>
@@ -44,7 +46,7 @@
           <img src="img/logo.png" alt="Logo" width="281" height="329">
         </div>
         
-        <div class="sidebar__block">
+        <div class="sidebar__block sidebar__block--top">
           <p class="title-block title-block--center">ОБЪЯВЛЕНИЯ И АНОНСЫ</p>
           <ul class="sidebar__list">
             <li>
@@ -63,18 +65,18 @@
         <p class="title-block">ПРАВОСЛАВНЫЙ КАЛЕНДАРЬ</p>
         <div class="sidebar__block">
           <img src="img/img-2.jpg" alt="ПРАВОСЛАВНЫЙ КАЛЕНДАРЬ" width="189" height="189">
-          <p class="date">24 февраля 2011 г.</p>
+          <p class="sidebar__date">24 февраля 2011 г.</p>
           <p class="sidebar__text">(11 февраля ст.ст.), Четверг. Поста нет. Сщмч. Власия (икона, храм), еп. Севастийского, и с ним двух отроков и 7 жен. Блгв. Кн. Всеволода (икона, молитвы), во св. Крещении Гавриила, Псковского. Прп. Димитрия (икона, храм, молитвы) Прилуцкого, Вологодского. Прав. Феодоры (икона, храм)</p>
           <a href="#">Подробнее</a>
         </div>
         
         <p class="title-block">КОНТАКТЫ</p>
-        <div class="sidebar__block">
-          <p><b>Адрес храма святителя Тихона, Патриарха Всероссийского, в Московском г. Москвы</b></p>
+        <div class="sidebar__block sidebar__block--contacts">
+          <b>Адрес храма святителя Тихона, Патриарха Всероссийского, в Московском г. Москвы</b>
           <address>142784, г.Москва, г. Московский, микрорайон 1, д. 50</address>
           <span>Справочный телефон храма:</span>
-          <a href="tel:+79037586704" class="contacts-link">8 (903) 758 67 04</a>
-          <a href="mailto:sv-tihon@mail.ru" class="contacts-link">E-mail: sv-tihon@mail.ru</a>
+          <a href="tel:+79037586704" class="sidebar__link">8 (903) 758 67 04</a>
+          <a href="mailto:sv-tihon@mail.ru" class="sidebar__link">E-mail: sv-tihon@mail.ru</a>
           <a href="#">Карта проезда</a>
         </div>
       </section>
@@ -82,13 +84,13 @@
       <article class="main">
         <header class="main__header">
           <div class="main__wrap">
-            <p class="main__name">РУССКАЯ ПРАВОСЛАВНАЯ ЦЕРКОВЬ (МОСКОВСКИЙ ПАТРИАРХАТ) МОСКОВСКАЯ ЕПАРХИЯ ВИКАРИАТСТВО НОВЫХ ТЕРРИТОРИЙ Г. МОСКВЫ ИЛЬИНСКОЕ БЛАГОЧИНИЕ</p>
+            <p class="main__name">РУССКАЯ ПРАВОСЛАВНАЯ ЦЕРКОВЬ (МОСКОВСКИЙ ПАТРИАРХАТ)<br>МОСКОВСКАЯ ЕПАРХИЯ<br>ВИКАРИАТСТВО НОВЫХ ТЕРРИТОРИЙ Г. МОСКВЫ<br>ИЛЬИНСКОЕ БЛАГОЧИНИЕ</p>
             <form action="#" class="search">
-              <input type="text" name="" class="search__input">
+              <input type="text" name="search" class="search__input">
               <button type="submit" class="search__btn"><span class="visually-hidden">Поиск</span></button>
             </form>
           </div>
-          <h1 class="main__title">Храм святителя тихона патриарха всероссийскогов московском г. москвы</h1>
+          <h1 class="main__title">Храм святителя тихона патриарха всероссийского<br>в московском г. москвы</h1>
           <nav class="menu">
             <ul class="menu__list">
               <li class="menu__item menu__item--active"><a href="#">воскресная школа</a></li>
@@ -103,22 +105,22 @@
           <p class="title-block">НОВОСТИ ХРАМА</p>
           <div class="news__wrap">
             <a href="#" class="news__img">
-              <img src="img/img-1.jpg" alt="" width="487" height="326">
+              <img src="img/img-1.jpg" alt="НОВОСТИ ХРАМА" width="487" height="326">
             </a>
             <ul class="news__list">
               <li class="news__item">
-                <time>05.03.2018.</time>
-                <p><a href="#">В мемориальном кабинете нашего храма открылась экспозиция старопечатных книг</a></p>
+                <time datetime="2018-03-05">05.03.2018.</time>
+                <p class="news__title"><a href="#">В мемориальном кабинете нашего храма открылась экспозиция старопечатных книг</a></p>
                 <a href="#">подробнее</a>
               </li>
               <li class="news__item">
-                <time>05.03.2018.</time>
-                <p><a href="#">15 февраля 2018 года Церковь празднует Сретение Господне</a></p>
+                <time datetime="2018-03-05">05.03.2018.</time>
+                <p class="news__title"><a href="#">15 февраля 2018 года Церковь празднует Сретение Господне</a></p>
                 <a href="#">подробнее</a>
               </li>
               <li class="news__item">
-                <time>05.03.2018.</time>
-                <p><a href="#">В мемориальном кабинете нашего храма открылась экспозиция старопечатных книг</a></p>
+                <time datetime="2018-03-05">05.03.2018.</time>
+                <p class="news__title"><a href="#">В мемориальном кабинете нашего храма открылась экспозиция старопечатных книг</a></p>
                 <a href="#">подробнее</a>
               </li>
             </ul>
@@ -227,6 +229,6 @@
     </div>
   </footer>
   
-  <script src=""></script>
+  <script src="js/jquery-3.2.1.min.js"></script>
 </body>
 </html>
