@@ -139,7 +139,7 @@
               <a href="#">Ссылка на галерею</a>
             </li>
             <li class="photo__item">
-              <p class="title"><a href="#">ЗАГОЛОВОК ФОТОГАЛЕРЕИ 1 В ДВЕ СТРОКИ</a></p>
+              <p class="title"><a href="#">ЗАГОЛОВОК ФОТОГАЛЕРЕИ 2 В ДВЕ СТРОКИ</a></p>
               <a href="#" class="photo__img">
                 <img src="img/placeholder.jpg" alt="ФОТОГАЛЕРЕЯ ХРАМА" width="243" height="148">
               </a>
@@ -147,7 +147,7 @@
               <a href="#">Ссылка на галерею</a>
             </li>
             <li class="photo__item">
-              <p class="title"><a href="#">ЗАГОЛОВОК ФОТОГАЛЕРЕИ 1 В ДВЕ СТРОКИ</a></p>
+              <p class="title"><a href="#">ЗАГОЛОВОК ФОТОГАЛЕРЕИ 3 В ДВЕ СТРОКИ</a></p>
               <a href="#" class="photo__img">
                 <img src="img/placeholder.jpg" alt="ФОТОГАЛЕРЕЯ ХРАМА" width="243" height="148">
               </a>
@@ -164,39 +164,55 @@
               <a href="#" class="school__img">
                 <img src="img/placeholder.jpg" alt="НОВОСТИ ВОСКРЕСНОЙ ШКОЛЫ" width="243" height="148">
               </a>
-              <p class="school__title">Заголовок новости воскресной школы 1</p>
-              <p>Сюда выводится анонс новости в 3-4-5 строчек. Сюда выводится анонс новости в 3-4-5 строчек. Сюда выводится анонс новости в 3-4-5 строчек. Сюда выводится анонс новости в 3-4-5 строчек. Сюда выводится анонс новости в 3-4-5 строчек.</p>
-              <a href="#">Подробнее</a>
+              <div class="school__info">
+                <p class="school__title"><a href="#">Заголовок новости воскресной школы 1</a></p>
+                <p>Сюда выводится анонс новости в 3-4-5 строчек. Сюда выводится анонс новости в 3-4-5 строчек. Сюда выводится анонс новости в 3-4-5 строчек. Сюда выводится анонс новости в 3-4-5 строчек. Сюда выводится анонс новости в 3-4-5 строчек.</p>
+                <a href="#">Подробнее</a>
+              </div>
             </li>
             <li class="school__item">
               <a href="#" class="school__img">
                 <img src="img/placeholder.jpg" alt="НОВОСТИ ВОСКРЕСНОЙ ШКОЛЫ" width="243" height="148">
               </a>
-              <p class="school__title">Структурность: учреждение дочерних организаций или международных фондов в зависимости от текущих задач.</p>
-              <p>Фонд будет содействовать работе Отдела Московского Патриархата церковно-общественных проектов и программ, поддержанию и развитие контактов с государственными, общественными структурами и организациями стран СНГ и Балтии.</p>
-              <a href="#">Подробнее</a>
+              <div class="school__info">
+                <p class="school__title"><a href="#">Структурность: учреждение дочерних организаций или международных фондов в зависимости от текущих задач.</a></p>
+                <p>Фонд будет содействовать работе Отдела Московского Патриархата церковно-общественных проектов и программ, поддержанию и развитие контактов с государственными, общественными структурами и организациями стран СНГ и Балтии.</p>
+                <a href="#">Подробнее</a>
+              </div>
             </li>
             <li class="school__item">
               <a href="#" class="school__img">
                 <img src="img/placeholder.jpg" alt="НОВОСТИ ВОСКРЕСНОЙ ШКОЛЫ" width="243" height="148">
               </a>
-              <p class="school__title">Структурность: учреждение дочерних организаций или международных фондов в зависимости от текущих задач.</p>
-              <p>Фонд будет содействовать работе Отдела Московского Патриархата церковно-общественных проектов и программ, поддержанию и развитие контактов с государственными, общественными структурами и организациями стран СНГ и Балтии.</p>
-              <a href="#">Подробнее</a>
+              <div class="school__info">
+                <p class="school__title"><a href="#">Структурность: учреждение дочерних организаций или международных фондов в зависимости от текущих задач.</a></p>
+                <p>Фонд будет содействовать работе Отдела Московского Патриархата церковно-общественных проектов и программ, поддержанию и развитие контактов с государственными, общественными структурами и организациями стран СНГ и Балтии.</p>
+                <a href="#">Подробнее</a>
+              </div>
             </li>
           </ul>
         </section>
         
         <form action="#" class="form">
           <p class="title-block">ВОПРОСЫ СВЯЩЕННИКУ</p>
-          <label for="name" class="form__label">Имя:</label>
-          <input type="text" name="name" id="name" class="form__input">
-          <label for="email" class="form__label">E-mail:</label>
-          <input type="text" name="email" id="email" class="form__input">
-          <label for="topic" class="form__label">Тема:</label>
-          <input type="text" name="topic" id="topic" class="form__input">
-          <label for="text" class="form__label">Вопрос:</label>
-          <textarea name="text" id="text" class="form__text"></textarea>
+          <div class="form__wrap">
+            <div class="form__field form__field--half">
+              <label for="name" class="form__label">Имя:</label>
+              <input type="text" name="name" id="name" class="form__input">
+            </div>
+            <div class="form__field form__field--half">
+              <label for="email" class="form__label">E-mail:</label>
+              <input type="text" name="email" id="email" class="form__input">
+            </div>
+          </div>
+          <div class="form__field">
+            <label for="topic" class="form__label">Тема:</label>
+            <input type="text" name="topic" id="topic" class="form__input form__input--wide">
+          </div>
+          <div class="form__field">
+            <label for="text" class="form__label">Вопрос:</label>
+            <textarea name="text" id="text" class="form__text"></textarea>
+          </div>
           <button type="submit" class="form__btn">ОТПРАВИТЬ</button>
         </form>
       </article>

@@ -1,0 +1,22 @@
+.social {
+  .reset();
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  li {
+    margin-left: 2px;
+    margin-right: 3px;
+  }
+  
+  a {
+    .transition();
+    
+    &:hover,
+    &:active {
+      opacity: 0.8;
+      .transition();
+    }
+  }
+}
