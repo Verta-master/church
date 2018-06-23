@@ -778,6 +778,16 @@ button {
   color: #000;
   text-decoration: none;
 }
+.photo--internal {
+  border: 1px solid #bfbfbf;
+  background-color: #fff;
+}
+.photo--internal .photo__list {
+  border: none;
+}
+.photo--internal .pages {
+  margin-top: 15px;
+}
 .photo__list {
   margin: 0;
   padding: 0;
@@ -785,16 +795,20 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
+  -ms-flex-line-pack: start;
+      align-content: flex-start;
   padding-left: 52px;
   padding-right: 30px;
   padding-top: 30px;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
   border: 1px solid #bfbfbf;
   background-color: #fff;
 }
@@ -803,6 +817,11 @@ button {
 }
 .photo__item {
   width: 243px;
+  margin-right: 40px;
+  margin-bottom: 20px;
+}
+.photo__item:nth-child(3n) {
+  margin-right: 0;
 }
 .photo__img {
   width: 100%;
@@ -1025,7 +1044,7 @@ button {
   right: -17px;
   width: 2px;
   height: 14px;
-  background-color: #fff;
+  background-color: #836742;
 }
 .breadcrumbs__link:hover,
 .breadcrumbs__link:active,
@@ -1035,7 +1054,7 @@ button {
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
 }
-.breadcrumbs__link--active::after {
+.breadcrumbs__link:last-child::after {
   display: none;
 }
 .article {
