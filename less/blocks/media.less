@@ -1,0 +1,284 @@
+@media (max-width: 1230px) {
+  .wrapper--main,
+  .main {
+    margin-top: 0;
+  }
+  .wrapper--main {
+    flex-direction: column-reverse;
+  }
+  .wrapper,
+  .sidebar,
+  .main {
+    width: 100%;
+  }
+  .header__nav,
+  .menu,
+  .header__name {
+    display: none;
+  }
+  .header__menu .header__name {
+    display: block;
+  }
+  .header__btn {
+    display: block;
+    width: 30px;
+    height: 30px;
+    margin-right: 40px;
+    background-image: url(../img/icon-menu-ham.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    
+    &--opened {
+      background-image: url(../img/icon-menu-cross.svg);
+    }
+  }
+  .header__menu-top {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .header__main {
+    width: auto;
+    max-width: 310px;
+    margin-left: 40px;
+  }
+  .header__wrap {
+    justify-content: center;
+  }
+  .header__title {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+  .logo {
+    margin: 0;
+    width: 250px;
+  }
+  .header__menu {
+    position: relative;
+  }
+  .header__nav {
+    position: absolute;
+    z-index: 10;
+    left: 0;
+    right: 0;
+    top: 100%;
+    padding-bottom: 10px;
+    background-color: rgba(0,0,0,0.8);
+  }
+  .header__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  .header__item {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  .header {
+    overflow-x: visible;
+  }
+  .news__img,
+  .news__list {
+    width: 50%;
+  }
+  .photo__item {
+    width: 30%;
+  }
+  .school__info {
+    width: 73%;
+  }
+  .form__text,
+  .form__input--wide {
+    width: ~"calc(100% - 140px)";
+  }
+  .form {
+    margin-bottom: 20px;
+  }
+  .school__list {
+    padding-bottom: 40px;
+  }
+  .sidebar__block {
+    padding: 30px;
+    min-height: 250px;
+    
+    &--top {
+      padding: 0;
+      border: none;
+      background-color: rgba(255,255,255,0);
+    }
+    
+    img {
+      float: left;
+      margin-right: 30px;
+    }
+  }
+  .title-block--center {
+    text-align: left;
+  }
+  .sidebar__list {
+    padding: 20px;
+    margin-top: 0;
+    background-color: #fff;
+    border: 1px solid #bfbfbf;
+  }
+}
+
+//--------------------------------
+@media (max-width: 1022px) {
+  .photo__list {
+    padding: 20px;
+    padding-bottom: 5px;
+    display: block;
+  }
+  .photo__item {
+    width: 100%;
+    min-height: 200px;
+    margin-right: 0;
+  }
+  .photo__img {
+    width: 250px;
+    float: left;
+    margin-right: 20px;
+  }
+  .school__list {
+    padding: 20px;
+    display: block;
+  }
+  .school__info {
+    width: 65%;
+  }
+  .form__wrap {
+    display: block;
+  }
+  .form__input {
+    width: ~"calc(100% - 140px)";
+  }
+}
+
+//---------------------------------
+@media (max-width: 766px) {
+  .header__name {
+    font-size: 10px;
+    letter-spacing: 0.2em;
+  }
+  .header__btn {
+    margin-right: 20px;
+  }
+  .header__main {
+    margin-left: 20px;
+    max-width: 230px;
+  }
+  .header__title {
+    font-size: 24px;
+  }
+  .header__wrap {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .logo {
+    width: 220px;
+  }
+  .header__top {
+    margin-bottom: 20px;
+  }
+  .news__wrap {
+    display: block;
+  }
+  .school__info {
+    width: 55%;
+  }
+  .news__img,
+  .news__list {
+    width: 100%;
+  }
+  .news__img {
+    height: 250px;
+    
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+  .photo__img {
+    width: 200px;
+  }
+  .footer__wrap {
+    flex-direction: column;
+  }
+  .footer {
+    padding-bottom: 10px;
+    
+    p {
+      text-align: center;
+    }
+  }
+}
+
+//----------------------------
+@media (max-width: 480px) {
+  .header__name {
+    max-width: 70%;
+  }
+  .logo {
+    width: 100px;
+    float: left;
+    margin-right: 20px;
+  }
+  .header__btn {
+    margin-right: 30px;
+  }
+  .header__main {
+    margin-left: 0;
+    max-width: none;
+  }
+  .header__wrap {
+    display: block;
+    margin-top: 0;
+  }
+  .header__top {
+    padding-top: 40px;
+    padding-bottom: 45px;
+  }
+  .news__img {
+    height: 190px;
+  }
+  .photo__img {
+    float: none;
+    width: 100%;
+  }
+  .form__field,
+  .school__item {
+    display: block;
+  }
+  .school__img {
+    width: 100%;
+    margin-bottom: 10px;
+    
+    img {
+      width: 100%;
+    }
+  }
+  .school__info {
+    width: 100%;
+  }
+  .form__label {
+    display: block;
+    width: auto;
+    margin-bottom: 10px;
+    text-align: left;
+  }
+  .form__input,
+  .form__text {
+    width: 100%;
+  }
+  .form__btn {
+    margin-left: 0;
+    width: 100%;
+  }
+  .sidebar__block img {
+    float: none;
+    margin-right: 0;
+    width: 100%;
+  }
+}

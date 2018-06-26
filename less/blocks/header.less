@@ -1,4 +1,15 @@
 .header {
+  overflow-x: hidden;
+}
+
+.header__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.header__menu {
+  margin-bottom: 10px;
   padding-top: 5px;
   padding-bottom: 5px;
   background-color: #000;
@@ -32,4 +43,36 @@
       text-decoration: underline;
     }
   }
+}
+
+.header__name {
+  color: #fff;
+  font-size: 11px;;
+  line-height: 13px;
+  font-weight: 400;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+}
+
+.header__title {
+  margin-top: 10px;
+  margin-bottom: 18px;
+  font-family: "IzhitsaC", "Arial", sans-serif;
+  color: #fff;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 27px;
+  text-transform: uppercase;
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__menu .header__name,
+.header__list--mobile,
+.header__btn {
+  display: none;
 }
