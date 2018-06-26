@@ -493,7 +493,7 @@ button {
   position: absolute;
   z-index: 10;
   bottom: 35px;
-  right: 30px;
+  right: 50px;
   padding-left: 28px;
   color: #b2c6d5;
   font-weight: 400;
@@ -596,13 +596,16 @@ button {
 .header__btn {
   display: none;
 }
-.header__main,
-.main {
+.header__main {
   width: 895px;
   position: relative;
 }
 .main {
+  width: 895px;
   margin-top: -60px;
+}
+main {
+  position: relative;
 }
 .sidebar {
   width: 270px;
@@ -1390,6 +1393,13 @@ button {
     background-color: #fff;
     border: 1px solid #bfbfbf;
   }
+  .article__list {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .article__item {
+    margin-right: 0;
+  }
 }
 @media (max-width: 1022px) {
   .photo__list {
@@ -1477,6 +1487,29 @@ button {
   }
   .footer p {
     text-align: center;
+  }
+  .article {
+    text-align: left;
+    padding: 15px;
+  }
+  .article__img {
+    float: none;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .pages__link {
+    text-align: center;
+  }
+  .pages::before {
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
+  .pages {
+    margin-top: 50px;
+  }
+  .btn-top {
+    bottom: 30px;
   }
 }
 @media (max-width: 480px) {
