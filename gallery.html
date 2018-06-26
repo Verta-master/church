@@ -9,43 +9,74 @@
 </head>
 <body>
   <header class="header">
-    <nav class="header__menu wrapper">
-      <ul class="header__list">
-        <li class="header__item">
-          <a href="#">о храме</a>
-        </li>
-        <li class="header__item">
-          <a href="#">духовенство</a>
-        </li>
-        <li class="header__item header__item--active">
-          <a href="#">расписание богослужений</a>
-        </li>
-        <li class="header__item">
-          <a href="#">таинство крещения</a>
-        </li>
-        <li class="header__item">
-          <a href="#">фотогалерея</a>
-        </li>
-        <li class="header__item">
-          <a href="#">пожертвования</a>
-        </li>
-        <li class="header__item">
-          <a href="#">вопросы священнику</a>
-        </li>
-        <li class="header__item">
-          <a href="#">контакты</a>
-        </li>
-      </ul>
+    <nav class="header__menu">
+      <div class="wrapper header__menu-top">
+        <button type="button" class="header__btn"><span class="visually-hidden">Menu</span></button>
+        <div class="header__nav">
+          <ul class="header__list">
+            <li class="header__item">
+              <a href="#">о храме</a>
+            </li>
+            <li class="header__item">
+              <a href="#">духовенство</a>
+            </li>
+            <li class="header__item header__item--active">
+              <a href="#">расписание богослужений</a>
+            </li>
+            <li class="header__item">
+              <a href="#">таинство крещения</a>
+            </li>
+            <li class="header__item">
+              <a href="#">фотогалерея</a>
+            </li>
+            <li class="header__item">
+              <a href="#">пожертвования</a>
+            </li>
+            <li class="header__item">
+              <a href="#">вопросы священнику</a>
+            </li>
+            <li class="header__item">
+              <a href="#">контакты</a>
+            </li>
+          </ul>
+          <ul class="header__list header__list--mobile">
+            <li class="header__item"><a href="#">воскресная школа</a></li>
+            <li class="header__item"><a href="#">социальная служба</a></li>
+            <li class="header__item"><a href="#">военно-патриотический клуб</a></li>
+            <li class="header__item"><a href="#">молодежная организация</a></li>
+          </ul>
+        </div>
+        <p class="header__name">РУССКАЯ ПРАВОСЛАВНАЯ ЦЕРКОВЬ (МОСКОВСКИЙ ПАТРИАРХАТ)<br>МОСКОВСКАЯ ЕПАРХИЯ<br>ВИКАРИАТСТВО НОВЫХ ТЕРРИТОРИЙ Г. МОСКВЫ<br>ИЛЬИНСКОЕ БЛАГОЧИНИЕ</p>
+      </div>
     </nav>
+    <div class="header__wrap wrapper">
+      <a href="#" class="logo">
+        <img src="img/logo.png" alt="Logo" width="281" height="329">
+      </a>
+      <div class="header__main">
+        <div class="header__top">
+          <p class="header__name">РУССКАЯ ПРАВОСЛАВНАЯ ЦЕРКОВЬ (МОСКОВСКИЙ ПАТРИАРХАТ)<br>МОСКОВСКАЯ ЕПАРХИЯ<br>ВИКАРИАТСТВО НОВЫХ ТЕРРИТОРИЙ Г. МОСКВЫ<br>ИЛЬИНСКОЕ БЛАГОЧИНИЕ</p>
+          <form action="#" class="search">
+            <input type="text" name="search" class="search__input">
+            <button type="submit" class="search__btn"><span class="visually-hidden">Поиск</span></button>
+          </form>
+        </div>
+        <p class="header__title">Храм святителя тихона патриарха всероссийского<br>в московском г.&nbsp;москвы</p>
+        <nav class="menu">
+          <ul class="menu__list">
+            <li class="menu__item menu__item--active"><a href="#">воскресная школа</a></li>
+            <li class="menu__item"><a href="#">социальная служба</a></li>
+            <li class="menu__item"><a href="#">военно-патриотический клуб</a></li>
+            <li class="menu__item"><a href="#">молодежная организация</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
   </header>
   
   <main>
     <div class="wrapper wrapper--main" id="top">
       <section class="sidebar">
-        <a href="#" class="logo">
-          <img src="img/logo.png" alt="Logo" width="281" height="329">
-        </a>
-        
         <div class="sidebar__block sidebar__block--top">
           <p class="title-block title-block--center">ОБЪЯВЛЕНИЯ И АНОНСЫ</p>
           <ul class="sidebar__list">
@@ -82,25 +113,6 @@
       </section>
       
       <article class="main">
-        <header class="main__header">
-          <div class="main__wrap">
-            <p class="main__name">РУССКАЯ ПРАВОСЛАВНАЯ ЦЕРКОВЬ (МОСКОВСКИЙ ПАТРИАРХАТ)<br>МОСКОВСКАЯ ЕПАРХИЯ<br>ВИКАРИАТСТВО НОВЫХ ТЕРРИТОРИЙ Г. МОСКВЫ<br>ИЛЬИНСКОЕ БЛАГОЧИНИЕ</p>
-            <form action="#" class="search">
-              <input type="text" name="search" class="search__input">
-              <button type="submit" class="search__btn"><span class="visually-hidden">Поиск</span></button>
-            </form>
-          </div>
-          <h1 class="main__title">Храм святителя тихона патриарха всероссийского<br>в московском г. москвы</h1>
-          <nav class="menu">
-            <ul class="menu__list">
-              <li class="menu__item menu__item--active"><a href="#">воскресная школа</a></li>
-              <li class="menu__item"><a href="#">социальная служба</a></li>
-              <li class="menu__item"><a href="#">военно-патриотический клуб</a></li>
-              <li class="menu__item"><a href="#">молодежная организация</a></li>
-            </ul>
-          </nav>
-        </header>
-        
         <nav class="breadcrumbs">
           <a href="#" class="breadcrumbs__link">ГЛАВНАЯ</a>
           <a href="#" class="breadcrumbs__link">ФОТОГАЛЕРЕЯ ХРАМА</a>
