@@ -5,6 +5,7 @@
   <meta name="robots" content="noindex">
   <meta  name="viewport" content="width=device-width,initial-scale=1">
   <title>Храм святителя Тихона Патриарха Всероссийского</title>
+  <link rel="stylesheet" href="css/slider-pro.css">
   <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -114,7 +115,39 @@
       </section>
       
       <article class="main">
+        <section class="slider">
+          <p class="title-block">НОВОСТИ ХРАМА</p>
+          <div class="slider-pro" id="slider">
+	          <div class="sp-slides">
+	            <div class="sp-slide">
+	              <img src="img/img-1.jpg" class="sp-image" alt="НОВОСТИ ХРАМА" width="487" height="326">
+	              <div class="sp-thumbnail">
+	                <time datetime="2018-03-05">05.03.2018.</time>
+                  <p class="slider__title">В мемориальном кабинете нашего храма открылась экспозиция старопечатных книг</p>
+                  <a href="#">подробнее</a>
+	              </div>
+              </div>
+              <div class="sp-slide">
+	              <img src="img/img-1.jpg" class="sp-image" alt="НОВОСТИ ХРАМА" width="487" height="326">
+	              <div class="sp-thumbnail">
+	                <time datetime="2018-03-05">05.03.2018.</time>
+                  <p class="slider__title">15 февраля 2018 года Церковь празднует Сретение Господне</p>
+                  <a href="#">подробнее</a>
+                </div>
+              </div>
+              <div class="sp-slide">
+	              <img src="img/img-1.jpg" class="sp-image" alt="НОВОСТИ ХРАМА" width="487" height="326">
+	              <div class="sp-thumbnail">
+	                <time datetime="2018-03-05">05.03.2018.</time>
+                  <p class="slider__title">В мемориальном кабинете нашего храма открылась экспозиция старопечатных книг</p>
+                  <a href="#">подробнее</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
         
+<!--
         <section class="news">
           <p class="title-block">НОВОСТИ ХРАМА</p>
           <div class="news__wrap">
@@ -140,6 +173,7 @@
             </ul>
           </div>
         </section>
+-->
         
         <section class="photo">
           <p class="title-block">ФОТОГАЛЕРЕЯ ХРАМА</p>
@@ -261,5 +295,35 @@
   
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/script.js"></script>
+  <script src="js/jquery.sliderPro.min.js"></script>
+  
+  <script>
+    jQuery(document).ready(function($) {
+      $('#slider').sliderPro({
+        width: '100%', 
+        height: 324,
+        buttons: false,
+        orientation: 'vertical',
+        autoplay: true,
+        touchSwipe: false,
+        imageScaleMode: 'contain',
+        thumbnailsPosition: 'right',
+        thumbnailWidth: 408,
+        thumbnailHeight: 108,
+        responsive: false,
+        breakpoints: {
+          960: {
+            thumbnailsPosition: 'bottom',
+            thumbnailWidth: 487,
+          },
+          480: {
+            height: 200,
+            thumbnailsPosition: 'bottom',
+            thumbnailWidth: 290,
+          }
+        }
+      });
+    });
+  </script>
 </body>
 </html>
